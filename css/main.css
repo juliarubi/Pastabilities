@@ -67,6 +67,7 @@ h1 {
   font
   margin: 2rem 1.2rem;
   color: #C36C5D;
+  -webkit-text-stroke: 3px #000;
 }
 
 h2 {
@@ -88,7 +89,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    background-image: url(file:///Users/juliarubinelli/Documents/GitHub_Projects/pastabilities/images/header-background.jpg);
+    background-image: url(../images/header-background.png);
     background-repeat: no-repeat;
     background-position: center;
   }
