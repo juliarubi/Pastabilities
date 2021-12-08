@@ -67,7 +67,7 @@ h1 {
   font
   margin: 2rem 1.2rem;
   color: #C36C5D;
-  -webkit-text-stroke: 3px #000;
+  text-shadow: 3px 2px #fff;
 }
 
 h2 {
@@ -195,6 +195,11 @@ margin-bottom: 3rem;
   grid-area: specialShape;
 }
 
+#map {
+  width: 700px;
+  height: 500px;
+  margin: auto;
+}
 
 /* highcharts css */
 .highcharts-figure,

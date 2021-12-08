@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Poppins:wght@300;400&family=Yellowtail&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+
 	<link href="css/main.css" rel="stylesheet">
 
   <title>Pastabilities</title>
@@ -26,7 +28,7 @@
   <div id="infobox"
     <div id="headerbox">
       <p id="changingheader"></p>
- <h2 class="changinginfotext">Ever wanted to know more about pasta</h2>
+ <h2 class="changinginfotext">Want to know more about pasta?</h2>
 
     </div>
   </div>
@@ -37,13 +39,20 @@
       <li class="list fade" id="groups">PASTA GROUPS</li>
       <li class="list fade" id="popular">POPULAR PASTA</li>
       <li class="list fade" id="orign">PASTA REGION</li>
-      <li class="list fade" id="paring">SAUCE PARINGS</li>
+      <li class="list fade" id="paring">SAUCE PAIRINGS</li>
     </ul>
   </nav>
 
       <!-- if i want to make a slide show section, like hair type, add the code here in one big section -->
 
+
+
 <div id="container">
+
+	<section id="home">
+hi
+
+</section>
 
 <section id="historyPasta">
 
@@ -99,6 +108,8 @@
 
 <section id="pastaOrign">
 
+	<div id="map"></div>
+
 </section>
 
 
@@ -113,12 +124,15 @@
 	<p>This page is an assignment for the University of Florida course <b>Introduction to Web Apps</b>.</p>
 </footer>
 
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/heatmap.js"></script>
 <script src="https://code.highcharts.com/modules/tilemap.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
 
 <script src="js/main.js"></script>
 

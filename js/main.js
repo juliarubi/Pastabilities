@@ -2,11 +2,13 @@ let history = document.querySelector("#history");
 let list = document.querySelectorAll(".list")
 let sections = document.querySelectorAll("section")
 let change = document.querySelector("h2")
+let home  = document.querySelector("home")
 
 
 function hideAllSections(){
   sections.forEach(function(el){
     el.style.display='none';
+
   });
 }
 
@@ -17,8 +19,13 @@ list.forEach(function(el) {
     // hide all the divs to ensure that only one will be open
     hideAllSections();
 
-
     switch (e.target.getAttribute('id')) {
+      case 'home':
+        document.querySelector('#home')
+          .style.display = 'block';
+          document.querySelector("#changingheader").textContent="Want to know more about pasta?";
+          document.querySelector("h2").textContent="";
+        break;
       case 'history':
         document.querySelector('#historyPasta')
         	.style.display = 'block';
@@ -58,6 +65,24 @@ list.forEach(function(el) {
 }); // end of forEach()
 
 
+// leaflet code
+let map = L.map('map').setView([42.418185, 10.130797], 5.01);
+
+L.tileLayer('https://api.mapbox.com/styles/v1/juliarubinelli/ckwy3fs5133nx14lhsfxbcfea/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoianVsaWFydWJpbmVsbGkiLCJhIjoiY2t3eTNlZmV6MGg3ODJxcTl2MmpvbzBlaiJ9.tiKKPuHUul9AZ22sZ7QnyA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+}).addTo(map);
+
+
+var markerOne = L.marker([45.440845, 12.315515]).addTo(map);
+var markerTwo = L.marker([45.440845, 12.496365]).addTo(map);
+var markerThree = L.marker([43.769562, 11.255814]).addTo(map);
+var markerFour = L.marker([40.851799, 14.268120]).addTo(map);
+
+markerOne.bindPopup("<b>Venice</b>");
+markerTwo.bindPopup("<b>Rome</b>").openPopup();
+markerThree.bindPopup("<b>florence</b>");
+markerFour.bindPopup("<b>Naples</b>");
 
 // highcharts code
 Highcharts.chart('chartOne', {
