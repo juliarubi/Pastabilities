@@ -196,6 +196,7 @@ margin-bottom: 3rem;
 }
 
 
+/* highcharts css */
 .highcharts-figure,
 .highcharts-data-table table {
     max-width: 100%;
@@ -273,6 +274,7 @@ margin-bottom: 3rem;
         margin: 0;
         font-size: 2rem;
         padding-bottom: 1rem;
+        -webkit-text-stroke: 0px #000;
       }
       p{
         width: 100%;

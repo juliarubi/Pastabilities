@@ -58,6 +58,8 @@ list.forEach(function(el) {
 }); // end of forEach()
 
 
+
+// highcharts code
 Highcharts.chart('chartOne', {
   chart: {
     type: 'tilemap',
