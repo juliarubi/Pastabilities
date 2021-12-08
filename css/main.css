@@ -1,0 +1,235 @@
+
+html {
+  font-size: 100%;
+  /* keep */
+  box-sizing: border-box;
+  /* keep */
+  height: 100%
+}
+
+* {
+  box-sizing: inherit;
+  /* keep */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-color: #A4BEA0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+nav ul {
+  font-family:'Outfit', sans-serif;
+  font-weight: 700;
+  color: #8BAD9D;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 1rem;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+}
+
+nav ul li {
+  background-color: #DFD7BB;
+  border-style: double;
+  border-color: #8BAD9D;
+  border-width: thick;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+
+h1 {
+  font-family:'Yellowtail', cursive;
+  text-align: center;
+  font-size: 7.4rem;
+  font-weight: 400;
+  font
+  margin: 2rem 1.2rem;
+  color: #C36C5D;
+}
+
+h2 {
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top:.5rem;
+  padding: 0 2rem;
+  color: #DFD7BB;
+  font-weight: normal;
+}
+
+  #headercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    background-image: url(file:///Users/juliarubinelli/Documents/GitHub_Projects/pastabilities/images/header-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #infobox {
+    background-color: #8BAD9D;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    max-width: 100%
+  }
+
+  #changingheader {
+    font-family: 'Roboto Condensed', 'Verdana', sans-serif;
+    text-align: center;
+    margin:0;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+    .changinginfotext{
+      margin:0;
+    }
+
+footer {
+    text-align: center;
+    font-family: 'Roboto Condensed', 'Verdana', sans-serif;
+    font-size: 1rem;
+    color: #40370D;
+    padding: 1rem;
+    align-items:center;
+}
+
+  #historyPasta {
+
+  }
+
+  #pastaGroups {
+    display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+max-width: 100%;
+margin-bottom: 3rem;
+}
+
+.grouptext {
+  padding: .5rem 3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Dosis', 'Amatic SC', 'Roboto Condensed', 'Verdana', sans-serif;
+  font-weight: 700;
+  color: #40370D;
+}
+
+  .groupborder {
+  border-style: double;
+  border-color: #DFD7BB;
+  border-width: medium;
+  background-color: #D89065;
+  border-radius: 1.5rem;
+  padding:1.3rem;
+  margin: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+  #fiveGroups {
+  border-radius: 2rem;
+  max-width: 1280px;
+  /* keep */
+  margin: auto;
+  /* keep */
+  display: grid;
+  /* keep */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+  "h3 h3 h3 h3 h3"
+  "long tube soup stuffed specialShape"
+  /* add images here */
+}
+
+#long {
+  grid-area: long;
+}
+
+#tube {
+  grid-area: tube;
+}
+
+#soup {
+  grid-area: soup;
+}
+
+#stuffed {
+  grid-area: stuffed;
+}
+
+#specialShape {
+  grid-area: specialShape;
+}
+
+/* ----- COLOR PAlETTE -----
+    A4BEA0 light pastel green
+    8BAD9D darker pastel green
+    DFD7BB tan
+    D89065 orange
+    C36C5D red
+
+    source: https://www.color-hex.com/color-palette/89397
+
+    - LINKS
+    379CB2 medium blue
+    82E8FF light blue
+
+   ----- NEUTRAL COLORS you may use also -----
+   000 black
+   333 charcoal
+   666 dark medium gray
+   999 light medium gray
+   ccc pale gray
+   fff white
+*/
+
+
+
+
+    @media screen and (max-width: 790px) {
+      body {
+        margin: 1rem;
+        font-size: 1rem;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        padding-bottom: 1rem;
+      }
+      p{
+        width: 100%;
+      }
+    }
