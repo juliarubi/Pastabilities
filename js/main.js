@@ -13,11 +13,12 @@ function hideAllSections(){
 }
 
 hideAllSections();
+document.querySelector('#home').style.display = ‘block’;
+
 list.forEach(function(el) {
   el.onclick = (e) => {
     // hide all the divs to ensure that only one will be open
     hideAllSections();
-    document.querySelector('#home').style.display = ‘block’;
 
     switch (e.target.getAttribute('id')) {
       case 'home':
