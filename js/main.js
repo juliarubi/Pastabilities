@@ -1,8 +1,8 @@
 let history = document.querySelector("#history");
-let list = document.querySelectorAll(".list")
-let sections = document.querySelectorAll("section")
-let change = document.querySelector("h2")
-let home  = document.querySelector("home")
+let list = document.querySelectorAll(".list");
+let sections = document.querySelectorAll("section");
+let change = document.querySelector("h2");
+let home  = document.querySelector("#home");
 
 
 function hideAllSections(){
@@ -13,11 +13,11 @@ function hideAllSections(){
 }
 
 hideAllSections();
-
 list.forEach(function(el) {
   el.onclick = (e) => {
     // hide all the divs to ensure that only one will be open
     hideAllSections();
+    document.querySelector('#home').style.display = ‘block’;
 
     switch (e.target.getAttribute('id')) {
       case 'home':
@@ -45,13 +45,13 @@ list.forEach(function(el) {
               document.querySelector("h2").textContent="list of the most popular types";
             break;
             case 'orign':
-              document.querySelector('#pastaOrign')
+              document.querySelector('#pastaOrigin')
                 .style.display = 'block';
                 document.querySelector("#changingheader").textContent="WHERE DID YOUR FAVORITE PASTA ORIGINATE?";
                 document.querySelector("h2").textContent="The regions that the most popular pastas come from";
               break;
               case 'paring':
-                document.querySelector('#sauceParings')
+                document.querySelector('#saucePairings')
                   .style.display = 'block';
                   document.querySelector("#changingheader").textContent="WHAT SAUCE SHOULD I PAIR WITH MY PASTA?";
                   document.querySelector("h2").textContent="Sauce guide";
