@@ -1,9 +1,14 @@
 let history = document.querySelector("#history");
-let list = document.querySelectorAll(".list");
+let nav = document.querySelectorAll(".nav");
 let sections = document.querySelectorAll("section");
 let change = document.querySelector("h2");
 let home  = document.querySelector("#home");
-
+let fet = document.querySelector("#fet");
+let pen = document.querySelector("#pen");
+let ore = document.querySelector("#ore");
+let rav = document.querySelector("#rav");
+let rot = document.querySelector("#rot");
+let lom = document.querySelector("#lom");
 
 function hideAllSections(){
   sections.forEach(function(el){
@@ -12,10 +17,11 @@ function hideAllSections(){
   });
 }
 
-hideAllSections();
-document.querySelector('#home').style.display = ‘block’;
 
-list.forEach(function(el) {
+hideAllSections();
+document.querySelector('#home').style.display = 'block';
+
+nav.forEach(function(el) {
   el.onclick = (e) => {
     // hide all the divs to ensure that only one will be open
     hideAllSections();
@@ -24,50 +30,169 @@ list.forEach(function(el) {
       case 'home':
         document.querySelector('#home')
           .style.display = 'block';
-          document.querySelector("#changingheader").textContent="Want to know more about pasta?";
+          document.querySelector("#heading").textContent="Want to know more about pasta?";
           document.querySelector("h2").textContent="";
         break;
       case 'history':
         document.querySelector('#historyPasta')
         	.style.display = 'block';
-          document.querySelector("#changingheader").textContent="HISTORY OF PASTA";
-          document.querySelector("h2").textContent="the amazing history of pasta";
+          document.querySelector("#heading").textContent="HISTORY OF PASTA";
+          document.querySelector("h2").textContent="The amazing history of pasta!";
         break;
         case 'groups':
           document.querySelector('#pastaGroups')
             .style.display = 'block';
-            document.querySelector("#changingheader").textContent="THE FIVE PASTA GROUPS";
-            document.querySelector("h2").textContent="there are five different types of pasta groups";
+            document.querySelector("#heading").textContent="THE FIVE PASTA GROUPS";
+            document.querySelector("h2").textContent="Scroll down to read about the different groups!";
           break;
           case 'popular':
             document.querySelector('#popularPasta')
               .style.display = 'block';
-              document.querySelector("#changingheader").textContent="THE MOST POPULAR TYPES OF PASTA";
-              document.querySelector("h2").textContent="list of the most popular types";
+              document.querySelector("#heading").textContent="THE MOST POPULAR PASTA DISHES";
+              document.querySelector("h2").textContent="Below is the most searched pasta dish in each U.S. State!";
             break;
             case 'orign':
               document.querySelector('#pastaOrigin')
                 .style.display = 'block';
-                document.querySelector("#changingheader").textContent="WHERE DID YOUR FAVORITE PASTA ORIGINATE?";
-                document.querySelector("h2").textContent="The regions that the most popular pastas come from";
+                document.querySelector("#heading").textContent="WHERE DID YOUR FAVORITE PASTA ORIGINATE?";
+                document.querySelector("h2").textContent="In one of the Italy's 20 regions!";
               break;
               case 'paring':
                 document.querySelector('#saucePairings')
                   .style.display = 'block';
-                  document.querySelector("#changingheader").textContent="WHAT SAUCE SHOULD I PAIR WITH MY PASTA?";
-                  document.querySelector("h2").textContent="Sauce guide";
+                  document.querySelector("#heading").textContent="WHAT SAUCE SHOULD I PAIR WITH MY PASTA?";
+                  document.querySelector("h2").textContent="Here is your sauce guide!";
                 break;
 
-    } // end of switch
+    }
+  }
+});
 
 
-  } // end of function for clicking
+fet.onclick = () => {
+  if (fet.getAttribute('src') === 'images/long/fettuccine.jpg')
+  {
+      fet.setAttribute('src', 'images/long/angelhair.jpg');
+  } else if (fet.getAttribute('src') === 'images/long/angelhair.jpg')
+  {
+      fet.setAttribute('src', 'images/long/spaghetti.jpg');
+  } else if (fet.getAttribute('src') === 'images/long/spaghetti.jpg')
+  {
+      fet.setAttribute('src', 'images/long/pappardelle.jpg');
+  } else {
+      fet.setAttribute('src', 'images/long/fettuccine.jpg');
+  }
+}
 
-}); // end of forEach()
+pen.onclick = () => {
+  if (pen.getAttribute('src') === 'images/tube/penne.jpg')
+  {
+      pen.setAttribute('src', 'images/tube/rigatoni.jpg');
+  } else if (pen.getAttribute('src') === 'images/tube/rigatoni.jpg')
+  {
+      pen.setAttribute('src', 'images/tube/elbow.jpg');
+  } else if (pen.getAttribute('src') === 'images/tube/elbow.jpg')
+  {
+      pen.setAttribute('src', 'images/tube/macaroni.jpg');
+  } else {
+      pen.setAttribute('src', 'images/tube/penne.jpg');
+  }
+}
+
+
+ore.onclick = () => {
+  if (ore.getAttribute('src') === 'images/soup/galets.jpg')
+  {
+      ore.setAttribute('src', 'images/soup/alphabet.jpg');
+  } else if (ore.getAttribute('src') === 'images/soup/alphabet.jpg')
+  {
+      ore.setAttribute('src', 'images/soup/orecchiette.jpg');
+  } else if (ore.getAttribute('src') === 'images/soup/orecchiette.jpg')
+  {
+      ore.setAttribute('src', 'images/soup/orzo.jpg');
+  } else {
+      ore.setAttribute('src', 'images/soup/galets.jpg');
+  }
+}
+
+
+rav.onclick = () => {
+  if (rav.getAttribute('src') === 'images/stuffed/ravioli.jpg')
+  {
+      rav.setAttribute('src', 'images/stuffed/tortelini.jpg');
+  } else if (rav.getAttribute('src') === 'images/stuffed/tortelini.jpg')
+  {
+      rav.setAttribute('src', 'images/stuffed/raviolitwo.jpg');
+  } else if (rav.getAttribute('src') === 'images/stuffed/raviolitwo.jpg')
+  {
+      rav.setAttribute('src', 'images/stuffed/tortelinitwo.jpg');
+  } else {
+      rav.setAttribute('src', 'images/stuffed/ravioli.jpg');
+  }
+}
+
+
+rot.onclick = () => {
+  if (rot.getAttribute('src') === 'images/specialshape/rotini.jpg')
+  {
+      rot.setAttribute('src', 'images/specialshape/rotelle.jpg');
+  } else if (rot.getAttribute('src') === 'images/specialshape/rotelle.jpg')
+  {
+      rot.setAttribute('src', 'images/specialshape/farfalle.jpg');
+  } else if (rot.getAttribute('src') === 'images/specialshape/farfalle.jpg')
+  {
+      rot.setAttribute('src', 'images/specialshape/cavatelli.jpg');
+  } else {
+      rot.setAttribute('src', 'images/specialshape/rotini.jpg');
+  }
+}
+
+
+lom.onclick = () => {
+  if (lom.getAttribute('src') === 'images/Lombardy.jpg')
+  {
+      lom.setAttribute('src', 'images/Lazio.jpg');
+  } else if (lom.getAttribute('src') === 'images/Lazio.jpg')
+  {
+      lom.setAttribute('src', 'images/Campania.jpg');
+  } else if (lom.getAttribute('src') === 'images/Campania.jpg')
+  {
+      lom.setAttribute('src', 'images/Puglia.jpg');
+  }  else if (lom.getAttribute('src') === 'images/Puglia.jpg')
+  {
+      lom.setAttribute('src', 'images/Sicily.jpg');
+  }  else if (lom.getAttribute('src') === 'images/Sicily.jpg')
+  {
+      lom.setAttribute('src', 'images/Tuscany.jpg');
+  }  else {
+      lom.setAttribute('src', 'images/Lombardy.jpg');
+  }
+}
+
+// code for annimation from Tobias Ahlin https://tobiasahlin.com/moving-letters/#2
+var textWrapper = document.querySelector('.main');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.main .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 
 // leaflet code
-let map = L.map('map').setView([42.418185, 10.130797], 5.01);
+let map = L.map('map').setView([39.603286, 12.429925], 4.32);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/juliarubinelli/ckwy3fs5133nx14lhsfxbcfea/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoianVsaWFydWJpbmVsbGkiLCJhIjoiY2t3eTNlZmV6MGg3ODJxcTl2MmpvbzBlaiJ9.tiKKPuHUul9AZ22sZ7QnyA', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -75,15 +200,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/juliarubinelli/ckwy3fs5133nx14lhsf
 }).addTo(map);
 
 
-var markerOne = L.marker([45.440845, 12.315515]).addTo(map);
-var markerTwo = L.marker([45.440845, 12.496365]).addTo(map);
-var markerThree = L.marker([43.769562, 11.255814]).addTo(map);
-var markerFour = L.marker([40.851799, 14.268120]).addTo(map);
+var markerOne = L.marker([45.657581, 9.963600]).addTo(map);
+var markerTwo = L.marker([41.872429, 12.818070]).addTo(map);
+var markerThree = L.marker([40.928490, 14.197450]).addTo(map);
+var markerFour = L.marker([41.222500, 16.066030]).addTo(map);
+var markerFive = L.marker([37.152390, 13.789310]).addTo(map);
+var markerSix = L.marker([43.771049, 11.248621]).addTo(map);
 
-markerOne.bindPopup("<b>Venice</b>");
-markerTwo.bindPopup("<b>Rome</b>").openPopup();
-markerThree.bindPopup("<b>florence</b>");
-markerFour.bindPopup("<b>Naples</b>");
+markerOne.bindPopup("<b>Lombardy: Home to Farfalle</b>");
+markerTwo.bindPopup("<b>Lazio: Home to Bucatini</b>").openPopup();
+markerThree.bindPopup("<b>Campania: Home to Penne</b>");
+markerFour.bindPopup("<b>Puglia: Home to Orecchiette</b>");
+markerFive.bindPopup("<b>Sicily: Home to Ziti</b>");
+markerSix.bindPopup("<b>Tuscany: Home to Gigli</b>");
 
 // highcharts code
 Highcharts.chart('chartOne', {
