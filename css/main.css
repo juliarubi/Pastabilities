@@ -574,14 +574,12 @@ h3{
               width: 200px;
               height: 100px;
               border-radius: 1.5rem;
-              margin-top: 13rem;
               }
 
             #tubepic img {
               width: 200px;
               height: 100px;
               border-radius: 1.5rem;
-              margin-top: 12rem;
               }
 
 
@@ -589,21 +587,18 @@ h3{
               width: 200px;
               height: 100px;
               border-radius: 1.5rem;
-              margin-top: 8rem;
               }
 
             #stuffedpic img {
               width: 200px;
               height: 100px;
               border-radius: 1.5rem;
-              margin-top: 5rem;
               }
 
             #specialShapepic img {
               width: 200px;
               height: 100px;
               border-radius: 1.5rem;
-              margin-top: 14rem;
               }
             #pastaGroups {
               font-size: 0.75rem;
@@ -623,7 +618,7 @@ h3{
 
             #sauceone{
               width: 150px;
-              height: 75px;
+              height: 150px;
               float: right;
               margin-left: 1rem;
               border-radius: 1.5rem;
@@ -631,7 +626,7 @@ h3{
 
             #saucetwo{
               width: 150px;
-              height: 75px;
+              height: 150px;
               float: left;
               margin-right: 1rem;
               border-radius: 1.5rem;
@@ -639,7 +634,7 @@ h3{
 
             #saucethree {
               width: 150px;
-              height: 75px;
+              height: 150px;
               float: right;
               margin-left: 1rem;
               margin-bottom: 1rem;
@@ -649,7 +644,7 @@ h3{
 
             #saucefour{
               width: 150px;
-              height: 75px;
+              height: 150px;
               float: left;
               margin-right: 1rem;
               border-radius: 1.5rem;
