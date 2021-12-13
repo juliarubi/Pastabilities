@@ -9,6 +9,21 @@ let ore = document.querySelector("#ore");
 let rav = document.querySelector("#rav");
 let rot = document.querySelector("#rot");
 let lom = document.querySelector("#lom");
+let rotateone = document.querySelector('#hisone');
+let rotatetwo = document.querySelector('#histwo');
+let image = document.querySelector('#sauceone');
+let longone= 'images/longone.jpg'
+let longtwo = 'images/longtwo.jpg';
+let imagetwo = document.querySelector('#saucetwo');
+let tubeone= 'images/tubeone.jpg'
+let tubetwo = 'images/tubetwo.jpg';
+let imagethree = document.querySelector('#saucethree');
+let stuffedone= 'images/stuffedone.jpg'
+let stuffedtwo = 'images/stuffedtwo.jpg';
+let imagefour = document.querySelector('#saucefour');
+let shapeone= 'images/shapeone.jpg'
+let shapetwo = 'images/shapetwo.jpg';
+
 
 function hideAllSections(){
   sections.forEach(function(el){
@@ -43,7 +58,7 @@ nav.forEach(function(el) {
           document.querySelector('#pastaGroups')
             .style.display = 'block';
             document.querySelector("#heading").textContent="THE FIVE PASTA GROUPS";
-            document.querySelector("h2").textContent="Scroll down to read about the different groups!";
+            document.querySelector("h2").textContent="Long, Tube, Soup, Stuffed, & Special Shape!";
           break;
           case 'popular':
             document.querySelector('#popularPasta')
@@ -60,8 +75,8 @@ nav.forEach(function(el) {
               case 'paring':
                 document.querySelector('#saucePairings')
                   .style.display = 'block';
-                  document.querySelector("#heading").textContent="WHAT SAUCE SHOULD I PAIR WITH MY PASTA?";
-                  document.querySelector("h2").textContent="Here is your sauce guide!";
+                  document.querySelector("#heading").textContent="THERE ARE NO DIFINITIVE RULES TO SAUCE PAIRINGS";
+                  document.querySelector("h2").textContent="However there are some general guidelines:";
                 break;
 
     }
@@ -168,6 +183,72 @@ lom.onclick = () => {
       lom.setAttribute('src', 'images/Lombardy.jpg');
   }
 }
+
+
+rotateone.onmouseenter = (e) => {
+	// change image tilt by changing a CSS class
+   e.target.classList.remove('rotate-none');
+   e.target.classList.add('rotate-left');
+};
+rotateone.onmouseleave = (e) => {
+// change image tilt back by changing a CSS class
+   e.target.classList.add('rotate-none');
+   e.target.classList.remove('rotate-left');
+};
+
+rotatetwo.onmouseenter = (e) => {
+	// change image tilt by changing a CSS class
+   e.target.classList.remove('rotate-none');
+   e.target.classList.add('rotate-right');
+};
+rotatetwo.onmouseleave = (e) => {
+// change image tilt back by changing a CSS class
+   e.target.classList.add('rotate-none');
+   e.target.classList.remove('rotate-right');
+};
+
+
+image.onmouseenter = (e) => {
+	// change image
+   e.target.setAttribute('src', longtwo);
+};
+
+image.onmouseleave = (e) => {
+// change image
+   e.target.setAttribute('src', longone);
+};
+
+imagetwo.onmouseenter = (e) => {
+	// change image
+   e.target.setAttribute('src', tubetwo);
+};
+
+imagetwo.onmouseleave = (e) => {
+// change image
+   e.target.setAttribute('src', tubeone);
+};
+
+imagethree.onmouseenter = (e) => {
+	// change image
+   e.target.setAttribute('src', stuffedtwo);
+};
+
+imagethree.onmouseleave = (e) => {
+// change image
+   e.target.setAttribute('src', stuffedone);
+};
+
+imagefour.onmouseenter = (e) => {
+	// change image
+   e.target.setAttribute('src', shapetwo);
+};
+
+imagefour.onmouseleave = (e) => {
+// change image
+   e.target.setAttribute('src', shapeone);
+};
+
+
 
 // code for annimation from Tobias Ahlin https://tobiasahlin.com/moving-letters/#2
 var textWrapper = document.querySelector('.main');

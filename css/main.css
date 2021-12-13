@@ -137,6 +137,40 @@ h3{
     text-align: center;
    }
 
+#phistory {
+  text-align: left;
+}
+
+#hisone {
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+}
+
+#histwo {
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+}
+
+.rotate-right {
+  transform: rotate(10deg);
+}
+
+.rotate-left {
+  transform: rotate(-10deg);
+}
+
+.rotate-none {
+  transform: rotate(0deg);
+}
+
 
 /* groups start */
  #pastaGroups {
@@ -170,6 +204,7 @@ h3{
     width: 400px;
     height: 300px;
     border-radius: 1.5rem;
+    margin-top: 3rem;
     }
 
   #longtext {
@@ -192,6 +227,7 @@ h3{
       width: 400px;
       height: 300px;
       border-radius: 1.5rem;
+      margin-top: 3rem;
       }
 
     #tubetext {
@@ -216,6 +252,7 @@ h3{
           width: 400px;
           height: 300px;
           border-radius: 1.5rem;
+          margin-top: 3rem;
           }
 
         #souptext {
@@ -239,6 +276,7 @@ h3{
               width: 400px;
               height: 300px;
               border-radius: 1.5rem;
+              margin-top: 3rem;
               }
 
             #stuffedtext {
@@ -262,6 +300,7 @@ h3{
                   width: 400px;
                   height: 300px;
                   border-radius: 1.5rem;
+                  margin-top: 3rem;
                   }
 
                 #specialShapetext {
@@ -327,7 +366,6 @@ h3{
     width: 500px;
     height: 300px;
     float: right;
-    shape-outside: margin-box;
     margin-left: 1rem;
     border-radius: 1.5rem;
     }
@@ -335,7 +373,7 @@ h3{
 
     #regionintro {
       text-align: center;
-      color: #C36C5D;
+      color: #DFD7BB;
       max-width: 800px;
       margin:auto;
       font-weight: bold;
@@ -374,13 +412,46 @@ h3{
       padding:1rem;
       margin: auto;
       max-width: 1000px;
-      text-align: center;
+      text-align: left;
     }
+
+#sauceone{
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+}
+
+#saucetwo{
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+}
+
+#saucethree {
+  width: 300px;
+  height: 200px;
+  float: right;
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+}
+
+
+#saucefour{
+  width: 300px;
+  height: 200px;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 1.5rem;
+}
 
 
 footer {
   text-align: center;
-  font-family: 'Poppins','Open Sans', 'Roboto' sans-serif;
+  font-family: 'Poppins','Open Sans', 'Roboto', sans-serif;
   font-size: 1rem;
   color: #40370D;
   padding: 1rem;
@@ -535,7 +606,53 @@ h3{
               font-size: 0.75rem;
             }
 
-footer {
-  font-size: 0.5rem;
-}
+            #hisone {
+              margin-bottom: 1rem;
+              margin-left: 0.25rem;
+            }
+
+       #histwo{
+              margin-bottom: 1rem;
+              margin-top: 1rem;
+            }
+
+
+
+            #sauceone{
+              width: 150px;
+              height: 75px;
+              float: right;
+              margin-left: 1rem;
+              border-radius: 1.5rem;
+            }
+
+            #saucetwo{
+              width: 150px;
+              height: 75px;
+              float: left;
+              margin-right: 1rem;
+              border-radius: 1.5rem;
+            }
+
+            #saucethree {
+              width: 150px;
+              height: 75px;
+              float: right;
+              margin-left: 1rem;
+              margin-bottom: 1rem;
+              border-radius: 1.5rem;
+            }
+
+
+            #saucefour{
+              width: 150px;
+              height: 75px;
+              float: left;
+              margin-right: 1rem;
+              border-radius: 1.5rem;
+            }
+
+            footer {
+              font-size: 0.5rem;
+            }
         }
