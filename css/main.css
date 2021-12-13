@@ -143,6 +143,7 @@ h3{
 
 #phistory {
   text-align: left;
+  padding: 0 3rem;
 }
 
 #hisone {
@@ -359,7 +360,7 @@ h3{
     border-width: thick;
     background-color: #8BAD9D;
     border-radius: 1.5rem;
-    padding:1rem;
+    padding:1rem 3rem;
     margin: auto;
     max-width: 1000px;
     text-align: center;
@@ -399,10 +400,9 @@ h3{
   border-width: medium;
   background-color: #8BAD9D;
   border-radius: 1.5rem;
-  padding:1rem;
+  padding: 1rem;
   margin: auto;
-  max-width: 900px;
-  font-size: 1rem;
+  max-width: 800px;
   text-align: left;
 }
 /* region end */
@@ -418,6 +418,11 @@ h3{
       max-width: 1000px;
       text-align: left;
     }
+
+#saucemargin{
+  max-width: 800px;
+  margin: auto;
+}
 
 #sauceone{
   width: 300px;
